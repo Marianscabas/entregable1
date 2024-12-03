@@ -100,3 +100,58 @@ th {
 td {
     background-color: var(--card-bg-color);
 }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 5px rgba(106, 27, 154, 0.5);
+}
+
+button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+@media (max-width: 768px) {
+    header, section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 100px;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+}
